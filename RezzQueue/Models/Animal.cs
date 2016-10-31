@@ -12,6 +12,7 @@ namespace RezzQueue.Models
         public int SpeciesId { get; set; }
         public int? BreedId { get; set; }
         public int? IconId { get; set; }
+        public string AnimalName { get; set; }
         public int? AnimalAge { get; set; }
         public string AnimalSize { get; set; }
         public int? AnimalPrice { get; set; }

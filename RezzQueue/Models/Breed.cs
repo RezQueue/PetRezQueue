@@ -9,10 +9,13 @@ namespace RezzQueue.Models
     {
         public int BreedId { get; set; }
         public string BreedName { get; set; }
+        public int SpeciesId { get; set; }
 
         //nav properties
 
         //breed(one)-animal(many)
         public virtual ICollection<Animal> Animals { get; set; }
+        //breed(many) - species(one)
+        public virtual Species Species { get; set; }
     }
 }

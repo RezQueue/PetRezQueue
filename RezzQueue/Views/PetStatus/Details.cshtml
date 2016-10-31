@@ -1,0 +1,58 @@
+﻿@model RezzQueue.Models.PetStatus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PetStatus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Animal.AnimalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Animal.AnimalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasSeen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasSeen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Favorite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Favorite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThumbsDown)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThumbsDown)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PetStatusId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

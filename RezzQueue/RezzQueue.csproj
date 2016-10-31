@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=16.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -168,8 +172,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AnimalsController.cs" />
+    <Compile Include="Controllers\BreedsController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IconsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PetStatusController.cs" />
+    <Compile Include="Controllers\SpeciesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +191,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PetStatus.cs" />
+    <Compile Include="Models\RezzQueueContext.cs" />
     <Compile Include="Models\Species.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -240,6 +251,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Animals\Create.cshtml" />
+    <Content Include="Views\Animals\Delete.cshtml" />
+    <Content Include="Views\Animals\Details.cshtml" />
+    <Content Include="Views\Animals\Edit.cshtml" />
+    <Content Include="Views\Animals\Index.cshtml" />
+    <Content Include="Views\Breeds\Create.cshtml" />
+    <Content Include="Views\Breeds\Delete.cshtml" />
+    <Content Include="Views\Breeds\Details.cshtml" />
+    <Content Include="Views\Breeds\Edit.cshtml" />
+    <Content Include="Views\Breeds\Index.cshtml" />
+    <Content Include="Views\Icons\Create.cshtml" />
+    <Content Include="Views\Icons\Delete.cshtml" />
+    <Content Include="Views\Icons\Details.cshtml" />
+    <Content Include="Views\Icons\Edit.cshtml" />
+    <Content Include="Views\Icons\Index.cshtml" />
+    <Content Include="Views\PetStatus\Create.cshtml" />
+    <Content Include="Views\PetStatus\Delete.cshtml" />
+    <Content Include="Views\PetStatus\Details.cshtml" />
+    <Content Include="Views\PetStatus\Edit.cshtml" />
+    <Content Include="Views\PetStatus\Index.cshtml" />
+    <Content Include="Views\Species\Create.cshtml" />
+    <Content Include="Views\Species\Delete.cshtml" />
+    <Content Include="Views\Species\Details.cshtml" />
+    <Content Include="Views\Species\Edit.cshtml" />
+    <Content Include="Views\Species\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
