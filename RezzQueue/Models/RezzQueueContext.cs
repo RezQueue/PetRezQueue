@@ -19,8 +19,6 @@ namespace RezzQueue.Models
         {
         }
 
-        public System.Data.Entity.DbSet<RezzQueue.Models.Customer> Customers { get; set; }
-
         public System.Data.Entity.DbSet<RezzQueue.Models.Animal> Animals { get; set; }
 
         public System.Data.Entity.DbSet<RezzQueue.Models.Breed> Breeds { get; set; }
@@ -28,6 +26,8 @@ namespace RezzQueue.Models
         public System.Data.Entity.DbSet<RezzQueue.Models.Species> Species { get; set; }
 
         public System.Data.Entity.DbSet<RezzQueue.Models.Icon> Icons { get; set; }
+
+        public System.Data.Entity.DbSet<RezzQueue.Models.Customer> Customers { get; set; }
 
         public System.Data.Entity.DbSet<RezzQueue.Models.PetStatus> PetStatus { get; set; }
     }

@@ -17,8 +17,7 @@ namespace RezzQueue.Controllers
         // GET: PetStatus
         public ActionResult Index()
         {
-            var petStatus = db.PetStatus.Include(p => p.Animal).Include(p => p.Customer);
-            return View(petStatus.ToList());
+            return View(db.PetStatus.ToList());
         }
 
         // GET: PetStatus/Details/5
@@ -39,8 +38,6 @@ namespace RezzQueue.Controllers
         // GET: PetStatus/Create
         public ActionResult Create()
         {
-            ViewBag.AnimalId = new SelectList(db.Animals, "AnimalId", "AnimalName");
-            ViewBag.CustomerId = new SelectList(db.Customers, "CustomerId", "CustomerName");
             return View();
         }
 
@@ -58,8 +55,6 @@ namespace RezzQueue.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.AnimalId = new SelectList(db.Animals, "AnimalId", "AnimalName", petStatus.AnimalId);
-            ViewBag.CustomerId = new SelectList(db.Customers, "CustomerId", "CustomerName", petStatus.CustomerId);
             return View(petStatus);
         }
 
@@ -75,8 +70,6 @@ namespace RezzQueue.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.AnimalId = new SelectList(db.Animals, "AnimalId", "AnimalName", petStatus.AnimalId);
-            ViewBag.CustomerId = new SelectList(db.Customers, "CustomerId", "CustomerName", petStatus.CustomerId);
             return View(petStatus);
         }
 
@@ -93,8 +86,6 @@ namespace RezzQueue.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.AnimalId = new SelectList(db.Animals, "AnimalId", "AnimalName", petStatus.AnimalId);
-            ViewBag.CustomerId = new SelectList(db.Customers, "CustomerId", "CustomerName", petStatus.CustomerId);
             return View(petStatus);
         }
 

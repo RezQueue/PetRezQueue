@@ -16,7 +16,7 @@ namespace RezzQueue.Models
         //nav property
         //customer(many) - animal(many)
         public virtual ICollection<Animal> Animals { get; set; }
-        //Customer(one)-Status(many)
+        //Customer(many)-Status(many)
         public ICollection<PetStatus> PetStatuses { get; set; }
     }
 }

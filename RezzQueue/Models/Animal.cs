@@ -32,7 +32,7 @@ namespace RezzQueue.Models
         public ICollection<Icon> Icons { get; set; }
         //Animal(many) - Customer(many)
         public ICollection<Customer> Customers { get; set; }
-        //Animal(one) - Status(many)
+        //Animal(many) - Status(many)
         public ICollection<PetStatus> PetStatuses { get; set; }
 
 

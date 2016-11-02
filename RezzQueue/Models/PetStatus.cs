@@ -15,10 +15,10 @@ namespace RezzQueue.Models
         public bool ThumbsDown { get; set; }
 
         //nav property
-        //Status(many)-Animal(one)
-        public virtual Animal Animal { get; set; }
-        //Status(many)-Customer(one)
-        public virtual Customer Customer { get; set; }
+        //Status(many)-Animal(many)
+        public virtual ICollection<Animal> Animals { get; set; }
+        //Status(many)-Customer(many)
+        public virtual ICollection<Customer> Customers { get; set; }
 
     }
 }
