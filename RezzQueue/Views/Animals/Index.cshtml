@@ -18,9 +18,6 @@
             @Html.DisplayNameFor(model => model.Species.SpeciesName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PetStatusId)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.IconId)
         </th>
         <th>
@@ -65,9 +62,6 @@
             @Html.DisplayFor(modelItem => item.Species.SpeciesName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PetStatusId)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.IconId)
         </td>
         <td>
@@ -83,7 +77,8 @@
             @Html.DisplayFor(modelItem => item.AnimalPrice)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AnimalPreview)
+            <img src="@Url.Content(item.AnimalPreview)" />
+
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AnimalPhoto)

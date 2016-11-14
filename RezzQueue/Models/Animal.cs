@@ -8,7 +8,6 @@ namespace RezzQueue.Models
     public class Animal
     {
         public int AnimalId { get; set; }
-        public int PetStatusId { get; set; }
         public int SpeciesId { get; set; }
         public int? BreedId { get; set; }
         public int? IconId { get; set; }
@@ -32,8 +31,7 @@ namespace RezzQueue.Models
         public ICollection<Icon> Icons { get; set; }
         //Animal(many) - Customer(many)
         public ICollection<Customer> Customers { get; set; }
-        //Animal(many) - Status(many)
-        public ICollection<PetStatus> PetStatuses { get; set; }
+       
 
 
     }
