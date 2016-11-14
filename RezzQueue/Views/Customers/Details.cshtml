@@ -1,4 +1,4 @@
-﻿@model RezzQueue.Models.Customer
+﻿@model RezzQueue.Models.CustomerViewModel
 
 @{
     ViewBag.Title = "Details";
@@ -9,7 +9,23 @@
 <div>
     <h4>Customer</h4>
     <hr />
-    <dl class="dl-horizontal">
+
+    @foreach (int i in ViewBag.favorites)
+    { 
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="..." alt="...">
+                <div class="caption">
+                    <h3>@Model.Animal.AnimalName</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.PetStatusId)
         </dt>
@@ -34,9 +50,9 @@
             @Html.DisplayFor(model => model.CustomerLocation)
         </dd>
 
-    </dl>
+    </dl>*@
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Customer.CustomerId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

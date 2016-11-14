@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RezzQueue.Models;
+using System.Collections;
 
 namespace RezzQueue.Controllers
 {
@@ -28,11 +29,30 @@ namespace RezzQueue.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Customer customer = db.Customers.Find(id);
+            CustomerViewModel customerVM = new CustomerViewModel();
+            customerVM.Customer = customer;
+            Animal animal = db.Animals.Find(id);
+            customerVM.Animal = animal;
+            PetStatus petStatus = db.PetStatus.Find(id);
+            customerVM.Petstatus = petStatus;
+            //get favorited animals in a list
+
+            //ViewBag.favorites = new List<int>();
+            List<int> favorites = new List<int>();
+            foreach (var i in customerVM.Customer.PetStatuses)
+            {
+                if (customerVM.Petstatus.Favorite == true)
+                {
+                    ViewBag.favorites.Add(petStatus.AnimalId);
+                }
+            }
+
+
             if (customer == null)
             {
                 return HttpNotFound();
             }
-            return View(customer);
+            return View(customerVM);
         }
 
         // GET: Customers/Create

@@ -196,6 +196,7 @@
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\Breed.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerViewModel.cs" />
     <Compile Include="Models\Icon.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
