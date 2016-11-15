@@ -1,4 +1,4 @@
-﻿@model RezzQueue.Models.CustomerViewModel
+﻿@model RezzQueue.Models.Customer
 
 @{
     ViewBag.Title = "Details";
@@ -9,29 +9,37 @@
 <div>
     <h4>Customer</h4>
     <hr />
-
-    @foreach (int i in ViewBag.favorites)
-    { 
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="..." alt="...">
-                <div class="caption">
-                    <h3>@Model.Animal.AnimalName</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    }
-    @*<dl class="dl-horizontal">
+    <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.PetStatusId)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.PetStatusId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmPassword)
         </dd>
 
         <dt>
@@ -43,6 +51,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.EmailID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailID)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.CustomerLocation)
         </dt>
 
@@ -50,9 +66,9 @@
             @Html.DisplayFor(model => model.CustomerLocation)
         </dd>
 
-    </dl>*@
+    </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Customer.CustomerId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
