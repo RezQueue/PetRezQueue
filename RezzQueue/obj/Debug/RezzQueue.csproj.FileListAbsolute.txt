@@ -71,3 +71,4 @@ C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Mi
 C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csproj.GenerateResource.Cache
 C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.dll
 C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.pdb
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csprojResolveAssemblyReference.cache
