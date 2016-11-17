@@ -31,7 +31,9 @@ namespace RezzQueue.Models
         public ICollection<Icon> Icons { get; set; }
         //Animal(many) - Customer(many)
         public ICollection<Customer> Customers { get; set; }
-       
+        //Animal(many) - Agency(one)
+        public virtual Agency Agency { get; set; }
+
 
 
     }

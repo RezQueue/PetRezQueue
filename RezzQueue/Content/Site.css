@@ -92,7 +92,7 @@ article[role="login"] p {
 
 .nav-tab-holder {
   padding: 0 0 0 30px;
-  float: right;
+  float: left;
 }
 
 .nav-tab-holder .nav-tabs {
@@ -122,13 +122,13 @@ article[role="login"] p {
 
 .nav-tab-holder .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #FFF;
-  background-color: #23bab5;
+  background-color: #f3a857;
   border: 0;
   border-radius: 0;
 }
 
 .mobile-pull {
-  float: right;
+  float: left;
 }
 
 article[role="manufacturer"] {

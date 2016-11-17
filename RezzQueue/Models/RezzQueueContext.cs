@@ -30,5 +30,7 @@ namespace RezzQueue.Models
         public System.Data.Entity.DbSet<RezzQueue.Models.Customer> Customers { get; set; }
 
         public System.Data.Entity.DbSet<RezzQueue.Models.PetStatus> PetStatus { get; set; }
+
+        public System.Data.Entity.DbSet<RezzQueue.Models.Agency> Agencies { get; set; }
     }
 }
