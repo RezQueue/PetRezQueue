@@ -18,8 +18,8 @@ namespace RezzQueue.Models
         public string AnimalPreview { get; set; }
         public string AnimalPhoto { get; set; }
         public string AnimalDesc { get; set; }
-        public string AgencyName { get; set; }
-        public string AgencyLocation { get; set; }
+        public string AnimalLocation { get; set; }
+        public int AgencyId { get; set; }
         public string AgencyContact { get; set; }
         
         //nav properties

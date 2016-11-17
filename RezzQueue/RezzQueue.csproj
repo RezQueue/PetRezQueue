@@ -196,6 +196,22 @@
     <Compile Include="Migrations\201611150047428_CustomerStuff.Designer.cs">
       <DependentUpon>201611150047428_CustomerStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611170125389_AddAgency.cs" />
+    <Compile Include="Migrations\201611170125389_AddAgency.Designer.cs">
+      <DependentUpon>201611170125389_AddAgency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170146476_AgencyId.cs" />
+    <Compile Include="Migrations\201611170146476_AgencyId.Designer.cs">
+      <DependentUpon>201611170146476_AgencyId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170356171_RemoveAgencyName.cs" />
+    <Compile Include="Migrations\201611170356171_RemoveAgencyName.Designer.cs">
+      <DependentUpon>201611170356171_RemoveAgencyName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170359466_AddAnimalLocation.cs" />
+    <Compile Include="Migrations\201611170359466_AddAnimalLocation.Designer.cs">
+      <DependentUpon>201611170359466_AddAnimalLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Agency.cs" />
@@ -326,6 +342,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611150047428_CustomerStuff.resx">
       <DependentUpon>201611150047428_CustomerStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170125389_AddAgency.resx">
+      <DependentUpon>201611170125389_AddAgency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170146476_AgencyId.resx">
+      <DependentUpon>201611170146476_AgencyId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170356171_RemoveAgencyName.resx">
+      <DependentUpon>201611170356171_RemoveAgencyName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170359466_AddAnimalLocation.resx">
+      <DependentUpon>201611170359466_AddAnimalLocation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
