@@ -10,127 +10,107 @@ using RezzQueue.Models;
 
 namespace RezzQueue.Controllers
 {
-    public class CustomersController : Controller
+    public class AgenciesController : Controller
     {
         private RezzQueueContext db = new RezzQueueContext();
 
-        // GET: Customers
+        // GET: Agencies
         public ActionResult Index()
         {
-            return View(db.Customers.ToList());
+            return View(db.Agencies.ToList());
         }
 
-        // GET: Customers/Details/5
+        // GET: Agencies/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
-            Customer customer = db.Customers.Find(id);
-            IEnumerable<Animal> animals = (from a in db.Animals
-                                                   select new Animal
-                                                   {
-                                                       AnimalId = a.AnimalId,
-                                                       AnimalName = a.AnimalName
-                                                   });
-            IEnumerable<PetStatus> petstats = (from a in db.PetStatus
-                                               select new PetStatus
-                                               {
-                                                   PetStatusId = a.PetStatusId,
-                                                   Favorite = a.Favorite
-                                               });
-            CustomerViewModel customerViewModel = new CustomerViewModel
+            Agency agency = db.Agencies.Find(id);
+            if (agency == null)
             {
-                Customer = customer,
-                AllAnimals = animals,
-                AllPetstatus = petstats
-            };
-
-
-            
-            
-            return View(customerViewModel);
-
+                return HttpNotFound();
+            }
+            return View(agency);
         }
 
-        // GET: Customers/Create
+        // GET: Agencies/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Customers/Create
+        // POST: Agencies/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CustomerId,PetStatusId,Username,Password,ConfirmPassword,CustomerName,EmailID,CustomerLocation")] Customer customer)
+        public ActionResult Create([Bind(Include = "AgencyId,Username,Password,ConfirmPassword,AgencyName,EmailID,AgencyLocation")] Agency agency)
         {
             if (ModelState.IsValid)
             {
-                db.Customers.Add(customer);
+                db.Agencies.Add(agency);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(customer);
+            return View(agency);
         }
 
-        // GET: Customers/Edit/5
+        // GET: Agencies/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
-            if (customer == null)
+            Agency agency = db.Agencies.Find(id);
+            if (agency == null)
             {
                 return HttpNotFound();
             }
-            return View(customer);
+            return View(agency);
         }
 
-        // POST: Customers/Edit/5
+        // POST: Agencies/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CustomerId,PetStatusId,Username,Password,ConfirmPassword,CustomerName,EmailID,CustomerLocation")] Customer customer)
+        public ActionResult Edit([Bind(Include = "AgencyId,Username,Password,ConfirmPassword,AgencyName,EmailID,AgencyLocation")] Agency agency)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(customer).State = EntityState.Modified;
+                db.Entry(agency).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(customer);
+            return View(agency);
         }
 
-        // GET: Customers/Delete/5
+        // GET: Agencies/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
-            if (customer == null)
+            Agency agency = db.Agencies.Find(id);
+            if (agency == null)
             {
                 return HttpNotFound();
             }
-            return View(customer);
+            return View(agency);
         }
 
-        // POST: Customers/Delete/5
+        // POST: Agencies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Customer customer = db.Customers.Find(id);
-            db.Customers.Remove(customer);
+            Agency agency = db.Agencies.Find(id);
+            db.Agencies.Remove(agency);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

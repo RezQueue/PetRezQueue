@@ -17,7 +17,7 @@ namespace RezzQueue.Controllers
         // GET: Animals
         public ActionResult Index()
         {
-            var animals = db.Animals.Include(a => a.Breed).Include(a => a.Species);
+            var animals = db.Animals.Include(a => a.Agency).Include(a => a.Breed).Include(a => a.Species);
             return View(animals.ToList());
         }
 
@@ -39,6 +39,7 @@ namespace RezzQueue.Controllers
         // GET: Animals/Create
         public ActionResult Create()
         {
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username");
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName");
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName");
             return View();
@@ -49,7 +50,7 @@ namespace RezzQueue.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AnimalId,PetStatusId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AgencyName,AgencyLocation,AgencyContact")] Animal animal)
+        public ActionResult Create([Bind(Include = "AnimalId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AnimalLocation,AgencyId,AgencyContact")] Animal animal)
         {
             if (ModelState.IsValid)
             {
@@ -58,6 +59,7 @@ namespace RezzQueue.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username", animal.AgencyId);
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
             return View(animal);
@@ -75,6 +77,7 @@ namespace RezzQueue.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username", animal.AgencyId);
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
             return View(animal);
@@ -85,7 +88,7 @@ namespace RezzQueue.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AnimalId,PetStatusId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AgencyName,AgencyLocation,AgencyContact")] Animal animal)
+        public ActionResult Edit([Bind(Include = "AnimalId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AnimalLocation,AgencyId,AgencyContact")] Animal animal)
         {
             if (ModelState.IsValid)
             {
@@ -93,6 +96,7 @@ namespace RezzQueue.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username", animal.AgencyId);
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
             return View(animal);

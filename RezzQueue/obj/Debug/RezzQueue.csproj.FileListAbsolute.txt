@@ -1,140 +1,78 @@
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\csc.exe
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\Microsoft.CSharp.Core.targets
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\Microsoft.VisualBasic.Core.targets
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\System.Collections.Immutable.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\System.Reflection.Metadata.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\vbc.exe
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\VBCSCompiler.exe
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\roslyn\VBCSCompiler.exe.config
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\RezzQueue.dll.config
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\RezzQueue.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\RezzQueue.pdb
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Antlr3.Runtime.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\EntityFramework.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\EntityFramework.SqlServer.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Core.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Owin.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Host.SystemWeb.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Cookies.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Facebook.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Google.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.OAuth.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Twitter.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Web.Infrastructure.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Newtonsoft.Json.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Owin.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Helpers.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Mvc.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Optimization.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Razor.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.WebPages.Deployment.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.WebPages.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.WebPages.Razor.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\WebGrease.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Helpers.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Mvc.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Optimization.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.Razor.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.WebPages.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.WebPages.Deployment.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\System.Web.WebPages.Razor.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Antlr3.Runtime.pdb
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Newtonsoft.Json.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\EntityFramework.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\EntityFramework.SqlServer.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Core.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Owin.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Host.SystemWeb.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Facebook.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Cookies.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.OAuth.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Google.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.Twitter.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\obj\Debug\RezzQueue.csprojResolveAssemblyReference.cache
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\obj\Debug\RezzQueue.dll
-c:\users\wecancodeit\documents\visual studio 2015\Projects\RezzQueue\RezzQueue\obj\Debug\RezzQueue.pdb
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\RezzQueue\RezzQueue\bin\AjaxControlToolkit.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\csc.exe
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\vbc.exe
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\VBCSCompiler.exe
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\RezzQueue.dll.config
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\RezzQueue.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\RezzQueue.pdb
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\AjaxControlToolkit.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Antlr3.Runtime.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\EntityFramework.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\EntityFramework.SqlServer.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Newtonsoft.Json.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Owin.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Helpers.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Mvc.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Optimization.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Razor.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Deployment.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.WebPages.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Razor.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\WebGrease.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Helpers.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Mvc.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Optimization.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.Razor.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.WebPages.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Deployment.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Razor.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Antlr3.Runtime.pdb
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Newtonsoft.Json.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\EntityFramework.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\EntityFramework.SqlServer.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csprojResolveAssemblyReference.cache
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.dll
-C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.pdb
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\csc.exe
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\vbc.exe
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\VBCSCompiler.exe
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\RezzQueue.dll.config
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\RezzQueue.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\RezzQueue.pdb
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\AjaxControlToolkit.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Antlr3.Runtime.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\EntityFramework.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\EntityFramework.SqlServer.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Newtonsoft.Json.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Owin.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Helpers.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Mvc.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Optimization.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Razor.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Deployment.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.WebPages.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Razor.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\WebGrease.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Helpers.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Mvc.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Optimization.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.Razor.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.WebPages.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Deployment.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\System.Web.WebPages.Razor.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Antlr3.Runtime.pdb
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Newtonsoft.Json.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\EntityFramework.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\EntityFramework.SqlServer.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.InitialCreate.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.Initial.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.CustomerStuff.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csproj.GenerateResource.Cache
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.dll
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.pdb
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csprojResolveAssemblyReference.cache
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.AddAgency.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.AgencyId.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.RemoveAgencyName.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.AddAnimalLocation.resources

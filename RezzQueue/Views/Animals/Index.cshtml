@@ -12,13 +12,13 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.Agency.Username)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Breed.BreedName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Species.SpeciesName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetStatusId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.IconId)
@@ -45,10 +45,7 @@
             @Html.DisplayNameFor(model => model.AnimalDesc)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AgencyName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AgencyLocation)
+            @Html.DisplayNameFor(model => model.AnimalLocation)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.AgencyContact)
@@ -59,13 +56,13 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.Agency.Username)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Breed.BreedName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Species.SpeciesName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetStatusId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IconId)
@@ -92,10 +89,7 @@
             @Html.DisplayFor(modelItem => item.AnimalDesc)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AgencyName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AgencyLocation)
+            @Html.DisplayFor(modelItem => item.AnimalLocation)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AgencyContact)

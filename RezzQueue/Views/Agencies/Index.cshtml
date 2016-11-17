@@ -1,4 +1,4 @@
-﻿@model IEnumerable<RezzQueue.Models.Customer>
+﻿@model IEnumerable<RezzQueue.Models.Agency>
 
 @{
     ViewBag.Title = "Index";
@@ -12,9 +12,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.PetStatusId)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Username)
         </th>
         <th>
@@ -24,22 +21,19 @@
             @Html.DisplayNameFor(model => model.ConfirmPassword)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CustomerName)
+            @Html.DisplayNameFor(model => model.AgencyName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.EmailID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CustomerLocation)
+            @Html.DisplayNameFor(model => model.AgencyLocation)
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetStatusId)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Username)
         </td>
@@ -50,18 +44,18 @@
             @Html.DisplayFor(modelItem => item.ConfirmPassword)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CustomerName)
+            @Html.DisplayFor(modelItem => item.AgencyName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.EmailID)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CustomerLocation)
+            @Html.DisplayFor(modelItem => item.AgencyLocation)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CustomerId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.AgencyId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AgencyId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AgencyId })
         </td>
     </tr>
 }

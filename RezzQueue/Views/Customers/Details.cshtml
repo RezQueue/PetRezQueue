@@ -1,4 +1,4 @@
-﻿@model RezzQueue.Models.CustomerViewModel
+﻿@model RezzQueue.Models.Customer
 
 @{
     ViewBag.Title = "Details";
@@ -9,6 +9,7 @@
 <div>
     <h4>Customer</h4>
     <hr />
+<<<<<<< HEAD
     <h1>@Model.Customer.CustomerName</h1>
 
 
@@ -25,11 +26,48 @@
     {
 
         <h1>@Model.AllPetstatus</h1>
+=======
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PetStatusId)
+        </dt>
+>>>>>>> 5be6d50d7680499e60810731ea611fa5763701eb
 
     }*@
 
+<<<<<<< HEAD
+=======
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+>>>>>>> 5be6d50d7680499e60810731ea611fa5763701eb
 
 
+<<<<<<< HEAD
     @*<div class="form-group">
         @Html.LabelFor(model => model.SelectedAnimals, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
@@ -49,11 +87,25 @@
                 <dt>
                     @Html.DisplayNameFor(model => model.CustomerName)
                 </dt>
+=======
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerLocation)
+        </dt>
+>>>>>>> 5be6d50d7680499e60810731ea611fa5763701eb
 
                 <dd>
                     @Html.DisplayFor(model => model.CustomerName)
                 </dd>
 
+<<<<<<< HEAD
                 <dt>
                     @Html.DisplayNameFor(model => model.CustomerLocation)
                 </dt>
@@ -64,7 +116,11 @@
 
             </dl>*@
     </div>
+=======
+    </dl>
+</div>
+>>>>>>> 5be6d50d7680499e60810731ea611fa5763701eb
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Customer.CustomerId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

@@ -8,7 +8,6 @@ namespace RezzQueue.Models
     public class Animal
     {
         public int AnimalId { get; set; }
-        public int PetStatusId { get; set; }
         public int SpeciesId { get; set; }
         public int? BreedId { get; set; }
         public int? IconId { get; set; }
@@ -19,8 +18,8 @@ namespace RezzQueue.Models
         public string AnimalPreview { get; set; }
         public string AnimalPhoto { get; set; }
         public string AnimalDesc { get; set; }
-        public string AgencyName { get; set; }
-        public string AgencyLocation { get; set; }
+        public string AnimalLocation { get; set; }
+        public int AgencyId { get; set; }
         public string AgencyContact { get; set; }
         
         //nav properties
@@ -32,8 +31,9 @@ namespace RezzQueue.Models
         public ICollection<Icon> Icons { get; set; }
         //Animal(many) - Customer(many)
         public ICollection<Customer> Customers { get; set; }
-        //Animal(many) - Status(many)
-        public ICollection<PetStatus> PetStatuses { get; set; }
+        //Animal(many) - Agency(one)
+        public virtual Agency Agency { get; set; }
+
 
 
     }

@@ -172,6 +172,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AgenciesController.cs" />
     <Compile Include="Controllers\AnimalsController.cs" />
     <Compile Include="Controllers\BreedsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
@@ -183,7 +184,37 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611022304034_InitialCreate.cs" />
+    <Compile Include="Migrations\201611022304034_InitialCreate.Designer.cs">
+      <DependentUpon>201611022304034_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611090109161_Initial.cs" />
+    <Compile Include="Migrations\201611090109161_Initial.Designer.cs">
+      <DependentUpon>201611090109161_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611150047428_CustomerStuff.cs" />
+    <Compile Include="Migrations\201611150047428_CustomerStuff.Designer.cs">
+      <DependentUpon>201611150047428_CustomerStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170125389_AddAgency.cs" />
+    <Compile Include="Migrations\201611170125389_AddAgency.Designer.cs">
+      <DependentUpon>201611170125389_AddAgency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170146476_AgencyId.cs" />
+    <Compile Include="Migrations\201611170146476_AgencyId.Designer.cs">
+      <DependentUpon>201611170146476_AgencyId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170356171_RemoveAgencyName.cs" />
+    <Compile Include="Migrations\201611170356171_RemoveAgencyName.Designer.cs">
+      <DependentUpon>201611170356171_RemoveAgencyName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170359466_AddAnimalLocation.cs" />
+    <Compile Include="Migrations\201611170359466_AddAnimalLocation.Designer.cs">
+      <DependentUpon>201611170359466_AddAnimalLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Agency.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\Breed.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -204,6 +235,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Images\clifford.png" />
+    <Content Include="Content\Images\garfield.png" />
+    <Content Include="Content\Images\Spot.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -252,11 +286,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Animals\Create.cshtml" />
-    <Content Include="Views\Animals\Delete.cshtml" />
-    <Content Include="Views\Animals\Details.cshtml" />
-    <Content Include="Views\Animals\Edit.cshtml" />
-    <Content Include="Views\Animals\Index.cshtml" />
     <Content Include="Views\Breeds\Create.cshtml" />
     <Content Include="Views\Breeds\Delete.cshtml" />
     <Content Include="Views\Breeds\Details.cshtml" />
@@ -282,6 +311,16 @@
     <Content Include="Views\Species\Details.cshtml" />
     <Content Include="Views\Species\Edit.cshtml" />
     <Content Include="Views\Species\Index.cshtml" />
+    <Content Include="Views\Animals\Create.cshtml" />
+    <Content Include="Views\Animals\Delete.cshtml" />
+    <Content Include="Views\Animals\Details.cshtml" />
+    <Content Include="Views\Animals\Edit.cshtml" />
+    <Content Include="Views\Animals\Index.cshtml" />
+    <Content Include="Views\Agencies\Create.cshtml" />
+    <Content Include="Views\Agencies\Delete.cshtml" />
+    <Content Include="Views\Agencies\Details.cshtml" />
+    <Content Include="Views\Agencies\Edit.cshtml" />
+    <Content Include="Views\Agencies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,6 +332,29 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611022304034_InitialCreate.resx">
+      <DependentUpon>201611022304034_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611090109161_Initial.resx">
+      <DependentUpon>201611090109161_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611150047428_CustomerStuff.resx">
+      <DependentUpon>201611150047428_CustomerStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170125389_AddAgency.resx">
+      <DependentUpon>201611170125389_AddAgency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170146476_AgencyId.resx">
+      <DependentUpon>201611170146476_AgencyId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170356171_RemoveAgencyName.resx">
+      <DependentUpon>201611170356171_RemoveAgencyName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170359466_AddAnimalLocation.resx">
+      <DependentUpon>201611170359466_AddAnimalLocation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
