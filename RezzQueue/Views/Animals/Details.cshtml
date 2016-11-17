@@ -11,6 +11,14 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.Agency.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Agency.Username)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Breed.BreedName)
         </dt>
 
@@ -91,19 +99,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AgencyName)
+            @Html.DisplayNameFor(model => model.AnimalLocation)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AgencyName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AgencyLocation)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AgencyLocation)
+            @Html.DisplayFor(model => model.AnimalLocation)
         </dd>
 
         <dt>

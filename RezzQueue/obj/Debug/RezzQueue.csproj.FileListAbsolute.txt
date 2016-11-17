@@ -72,3 +72,7 @@ C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.cs
 C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.dll
 C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.pdb
 C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csprojResolveAssemblyReference.cache
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.AddAgency.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.AgencyId.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.RemoveAgencyName.resources
+C:\Users\WeCanCodeIT\Desktop\PetRez\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.AddAnimalLocation.resources

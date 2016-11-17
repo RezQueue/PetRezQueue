@@ -7,7 +7,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RezzQueue.Models;
-using System.IO;
 
 namespace RezzQueue.Controllers
 {
@@ -16,28 +15,10 @@ namespace RezzQueue.Controllers
         private RezzQueueContext db = new RezzQueueContext();
 
         // GET: Animals
-        public ActionResult Index(int? index)
+        public ActionResult Index()
         {
-            int max = 3;
-
-            int currentIndex = index.GetValueOrDefault();
-            if (currentIndex == 0)
-            {
-                ViewBag.NetIndex = 1;
-            }
-            else if (currentIndex >= max)
-            {
-                currentIndex = max;
-                ViewBag.PreviousIndex = currentIndex - 1;
-            }
-            else
-            {
-                ViewBag.PreviousIndex = currentIndex - 1;
-                ViewBag.NextIndex = currentIndex + 1;
-            }
-            var animals = db.Animals.Include(a => a.Breed).Include(a => a.Species).Skip(currentIndex).Take(1).FirstOrDefault();
-            
-            return View(animals);
+            var animals = db.Animals.Include(a => a.Agency).Include(a => a.Breed).Include(a => a.Species);
+            return View(animals.ToList());
         }
 
         // GET: Animals/Details/5
@@ -58,6 +39,7 @@ namespace RezzQueue.Controllers
         // GET: Animals/Create
         public ActionResult Create()
         {
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username");
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName");
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName");
             return View();
@@ -68,20 +50,19 @@ namespace RezzQueue.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AnimalId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AgencyName,AgencyLocation,AgencyContact")] Animal animal, HttpPostedFileBase file)
+        public ActionResult Create([Bind(Include = "AnimalId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AnimalLocation,AgencyId,AgencyContact")] Animal animal)
         {
             if (ModelState.IsValid)
-
             {
                 db.Animals.Add(animal);
-                db.SaveChanges();               
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-                ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
-                ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
-                return View(animal);
-                
-            
+
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username", animal.AgencyId);
+            ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
+            ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
+            return View(animal);
         }
 
         // GET: Animals/Edit/5
@@ -96,6 +77,7 @@ namespace RezzQueue.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username", animal.AgencyId);
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
             return View(animal);
@@ -106,18 +88,15 @@ namespace RezzQueue.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AnimalId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AgencyName,AgencyLocation,AgencyContact")] Animal animal )
+        public ActionResult Edit([Bind(Include = "AnimalId,SpeciesId,BreedId,IconId,AnimalName,AnimalAge,AnimalSize,AnimalPrice,AnimalPreview,AnimalPhoto,AnimalDesc,AnimalLocation,AgencyId,AgencyContact")] Animal animal)
         {
             if (ModelState.IsValid)
             {
-               
-                
                 db.Entry(animal).State = EntityState.Modified;
-                
                 db.SaveChanges();
-
                 return RedirectToAction("Index");
             }
+            ViewBag.AgencyId = new SelectList(db.Agencies, "AgencyId", "Username", animal.AgencyId);
             ViewBag.BreedId = new SelectList(db.Breeds, "BreedId", "BreedName", animal.BreedId);
             ViewBag.SpeciesId = new SelectList(db.Species, "SpeciesId", "SpeciesName", animal.SpeciesId);
             return View(animal);
