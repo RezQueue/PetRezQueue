@@ -28,31 +28,37 @@ namespace RezzQueue.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Customer customer = db.Customers.Find(id);
-            CustomerViewModel customerVM = new CustomerViewModel();
-            customerVM.Customer = customer;
-            Animal animal = db.Animals.Find(id);
-            customerVM.Animal = animal;
-            PetStatus petStatus = db.PetStatus.Find(id);
-            customerVM.Petstatus = petStatus;
-            //get favorited animals in a list
 
-            //ViewBag.favorites = new List<int>();
-            List<int> favorites = new List<int>();
-            foreach (var i in customerVM.Customer.PetStatuses)
+            Customer customer = db.Customers.Find(id);
+            IEnumerable<Animal> animals = (from a in db.Animals
+                                                   select new Animal
+                                                   {
+                                                       AnimalId = a.AnimalId,
+                                                       AnimalName = a.AnimalName
+                                                   });
+            IEnumerable<PetStatus> petstats = (from a in db.PetStatus
+                                               select new PetStatus
+                                               {
+                                                   PetStatusId = a.PetStatusId,
+                                                   Favorite = a.Favorite
+                                               });
+            CustomerViewModel customerViewModel = new CustomerViewModel
             {
-                if (customerVM.Petstatus.Favorite == true)
-                {
-                    ViewBag.favorites.Add(petStatus.AnimalId);
-                }
-            }
+                Customer = customer,
+                AllAnimals = animals,
+                AllPetstatus = petstats
+            };
+
+
+            
+
 
 
             if (customer == null)
             {
                 return HttpNotFound();
             }
-            return View(customerVM);
+            return View(customerViewModel);
         }
 
         // GET: Customers/Create
