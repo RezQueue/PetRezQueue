@@ -15,11 +15,37 @@ namespace RezzQueue.Controllers
         private RezzQueueContext db = new RezzQueueContext();
 
         // GET: Animals
-        public ActionResult Index()
+        public ActionResult Index(int? index)
         {
-            var animals = db.Animals.Include(a => a.Breed).Include(a => a.Species);
-            return View(animals.ToList());
+            int max = 5; // modify based on the actual number of records
+
+            int currentIndex = index.GetValueOrDefault();
+            if (currentIndex == 0)
+            {
+                ViewBag.NextIndex = 1;
+            }
+            else if (currentIndex >= max)
+            {
+                currentIndex = max;
+                ViewBag.PreviousIndex = currentIndex - 1;
+            }
+            else
+            {
+                ViewBag.PreviousIndex = currentIndex - 1;
+                ViewBag.NextIndex = currentIndex + 1;
+            }
+
+            AnimalChoices objnews = new AnimalChoices();
+            Animal model = db.Database.SqlQuery<Animal>("AnimalId")
+              .Skip(currentIndex).Take(1).FirstOrDefault();
+
+            return View(model);
         }
+        //public ActionResult Index()
+        //{
+        //    var animals = db.Animals.Include(a => a.Breed).Include(a => a.Species);
+        //    return View(animals.ToList());
+        //}
 
         // GET: Animals/Details/5
         public ActionResult Details(int? id)

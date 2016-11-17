@@ -5,6 +5,12 @@ using System.Web;
 
 namespace RezzQueue.Models
 {
+
+    public class AnimalChoices
+    {
+        public List<Animal> AnimalDetails { get; set; }
+    }
+
     public class Animal
     {
         public int AnimalId { get; set; }

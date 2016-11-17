@@ -39,12 +39,12 @@ namespace RezzQueue.Controllers
 
             //ViewBag.favorites = new List<int>();
             List<int> favorites = new List<int>();
-            foreach (var i in customerVM.Customer.PetStatuses)
+            foreach (var i in customerVM.Customer.CustomerName)
             {
-                if (customerVM.Petstatus.Favorite == true)
-                {
-                    ViewBag.favorites.Add(petStatus.AnimalId);
-                }
+            //    if (customerVM.Petstatus.Favorite == true)
+            //    {
+            //        ViewBag.favorites.Add(petStatus.AnimalId);
+            //    }
             }
 
 

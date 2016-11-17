@@ -1,4 +1,4 @@
-﻿@model IEnumerable<RezzQueue.Models.Animal>
+﻿@model RezzQueue.Models.Animal
 
 @{
     ViewBag.Title = "Index";
@@ -9,7 +9,23 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+
+
+<h3>@Model.AnimalName</h3>
+
+@if (ViewBag.PreviousIndex != null)
+{
+    @Html.ActionLink("Previous", "Index", new { index = ViewBag.PreviousIndex })
+}
+@if (ViewBag.NextIndex != null)
+{
+    @Html.ActionLink("Next", "Index", new { index = ViewBag.NextIndex })
+}
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Breed.BreedName)
@@ -108,4 +124,4 @@
     </tr>
 }
 
-</table>
+</table>*@

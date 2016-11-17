@@ -138,3 +138,6 @@ C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csprojResolveAssemblyReference.cache
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.dll
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.pdb
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.InitialCreate.resources
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.csproj.GenerateResource.Cache
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Rezqueque\PetRezQueue\RezzQueue\obj\Debug\RezzQueue.Migrations.LandingPageChanges.resources
