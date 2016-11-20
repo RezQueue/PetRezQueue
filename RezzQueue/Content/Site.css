@@ -29,7 +29,7 @@ textarea {
 }
 
 .col-md-2{
-    float:none;
+   
 }
 
 .login-signup {
@@ -195,3 +195,45 @@ article[role="manufacturer"] ul li i {
     width: 50%;
   }
 }
+
+#PetPic {
+     height: 350px;
+     width: 350px;
+     border-radius: 50%;
+     object-fit: cover;
+ }
+ 
+ #NavLandButton {
+     height: 80px;
+     width: 80px;
+     border-radius: 50%;
+ }
+ 
+ #LandButtonGlyph {
+     font-size: xx-large;
+ }
+ 
+ #LandContent
+ {
+     width: 500px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ #LandPetName
+ {
+     text-align: center;
+ }
+ 
+ #AvailablePet
+ {
+     border: none;
+     max-width: none;
+     width: 350px;
+ }
+ 
+ #PetBioButton
+ {
+     text-align: center;
+ }

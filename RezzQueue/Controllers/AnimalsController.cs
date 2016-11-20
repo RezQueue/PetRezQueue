@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RezzQueue.Models;
+using PagedList;
+using PagedList.Mvc;
 
 namespace RezzQueue.Controllers
 {
@@ -15,10 +17,12 @@ namespace RezzQueue.Controllers
         private RezzQueueContext db = new RezzQueueContext();
 
         // GET: Animals
-        public ActionResult Index()
+        public ActionResult Index(int? page )
         {
-            var animals = db.Animals.Include(a => a.Agency).Include(a => a.Breed).Include(a => a.Species);
-            return View(animals.ToList());
+
+            return View(db.Animals.ToList().ToPagedList(page ?? 1, 1));
+           
+           
         }
 
         // GET: Animals/Details/5
