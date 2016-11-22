@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RezzQueue.Models;
+using PagedList;
+using PagedList.Mvc;
 
 namespace RezzQueue.Controllers
 {
@@ -15,10 +17,14 @@ namespace RezzQueue.Controllers
         private RezzQueueContext db = new RezzQueueContext();
 
         // GET: Animals
-        public ActionResult Index()
+        public ActionResult Index(int? page, int? id)
         {
-            var animals = db.Animals.Include(a => a.Agency).Include(a => a.Breed).Include(a => a.Species);
-            return View(animals.ToList());
+            this.ViewBag.Page = page + 1;
+            
+
+            return View(db.Animals.ToList().ToPagedList(page ?? 1, 1));
+
+
         }
 
         // GET: Animals/Details/5
@@ -46,7 +52,7 @@ namespace RezzQueue.Controllers
         }
 
         // POST: Animals/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -84,7 +90,7 @@ namespace RezzQueue.Controllers
         }
 
         // POST: Animals/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
