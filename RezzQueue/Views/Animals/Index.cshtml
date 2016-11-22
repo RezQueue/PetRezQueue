@@ -1,4 +1,7 @@
-﻿@model IEnumerable<RezzQueue.Models.Animal>
+﻿@using PagedList;
+@using PagedList.Mvc;
+@*@model IEnumerable<RezzQueue.Models.Animal>*@
+@model PagedList.IPagedList<RezzQueue.Models.Animal>
 
 @{
     ViewBag.Title = "Index";
@@ -9,8 +12,8 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
+@*<table class="table">*@
+@*<tr>
         <th>
             @Html.DisplayNameFor(model => model.Agency.Username)
         </th>
@@ -51,10 +54,11 @@
             @Html.DisplayNameFor(model => model.AgencyContact)
         </th>
         <th></th>
-    </tr>
+    </tr>*@
 
-@foreach (var item in Model) {
-    <tr>
+@foreach (var item in Model)
+{
+    @*<tr>
         <td>
             @Html.DisplayFor(modelItem => item.Agency.Username)
         </td>
@@ -93,13 +97,36 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AgencyContact)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AnimalId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AnimalId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AnimalId })
-        </td>
-    </tr>
+        </td>*@
+
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div id="AvailablePet" class="thumbnail">
+                @if (ViewBag.Page > 1)
+                {
+
+                <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })" rel="prev" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-left"></span></a>
+                }
+                <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-remove"></span></button>
+                <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-heart"></span></button>
+                <a href="@Url.Action("Index", new { page = ViewBag.Page +1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                <img src="@Url.Content(item.AnimalPreview)" />
+                <div class="caption">
+                    @Html.DisplayFor(modelItem => item.AnimalName)
+                    <br />
+                    @Html.ActionLink("Pet Bio", "Details", "Animals", new { id = item.AnimalId }, new { @class = "btn btn-primary btn-lg" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AnimalId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AnimalId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AnimalId })
+            </td>
+            @*</tr>*@
 }
 
-</table>
+@*</table>*@
