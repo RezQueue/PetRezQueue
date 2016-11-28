@@ -1,0 +1,78 @@
+﻿@model IEnumerable<RezzQueue.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-paw"></i> RezzQue <i class="fa fa-paw"></i></button>
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>
+
+
+
+
+<body>
+    <h2>Pet Landing Page</h2>
+
+    <div id="LandContent" class="container">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div id="AvailablePet" class="thumbnail">
+                    <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-left"></span></button>
+                    <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-remove"></span></button>
+                    <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-heart"></span></button>
+                    <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></button>
+                    <img Id="PetPic" src="~/Content/images/Moofasa.jpg" alt="...">
+                    <div class="caption">
+                        <h3 id="LandPetName">Pet Name</h3>
+                        <p id="PetBioButton"><a href="#" class="btn btn-primary" role="button">Pet Bio</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.PetStatusId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CustomerLocation)
+                </th>
+                <th></th>
+            </tr>
+
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PetStatusId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerLocation)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.CustomerId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.CustomerId })
+                </td>
+            </tr>
+        }
+
+        </table>*@
+</body>

@@ -1,0 +1,144 @@
+﻿@model RezzQueue.Models.Customer
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>SIGN UP, IT'S FREE!</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal">
+        @if (ViewBag.Message != null)
+        {
+            <div style="border:solid 1px green">
+                @ViewBag.Message
+            </div>
+        }
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.PetStatusId, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PetStatusId, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PetStatusId, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        <div class="containter">
+            <div class="login-signup">
+                <div class="row">
+                    <div class="col-sm-6 nav-tab-holder">
+                        <ul class="nav nav-tabs row" role="tablist">
+                            <li role="presentation" class="active col-sm-6">@Html.ActionLink("Customer", "Create", "Customers")</li>
+                            <li role="presentation" class="col-sm-6"> @Html.ActionLink("Agency", "Create", "Agencies")</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="row">
+                            <div class="col-sm-6 mobile-pull">
+                                <article>
+                                    <h3 class="text-center"><i class="fa fa-lock"></i>USER</h3>
+
+                                    <div class="form-group">                                      
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control", placeholder = "Full Name" } })
+                                            @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">                                       
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", placeholder = "Username" } })
+                                            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">                                       
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password" } })
+                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">        
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "Confirm Password" } })
+                                            @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                   
+
+                                    <div class="form-group">
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.EmailID, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
+                                            @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.CustomerLocation, new { htmlAttributes = new { @class = "form-control", placeholder = "Address" } })
+                                            @Html.ValidationMessageFor(model => model.CustomerLocation, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Please accept the terms and conditions to proceed with your request.
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="SUBMIT" class="btn btn-success btn-block" />
+                                        </div>
+                                    </div>
+
+
+                                    <footer class="text-center">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Terms of Use</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Privacy Statement</a>
+                                            </li>
+                                        </ul>
+                                    </footer>
+                                </article>
+                            </div>
+                            
+                        </div>
+                        <!-- end of row -->
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

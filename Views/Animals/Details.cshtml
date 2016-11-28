@@ -1,0 +1,122 @@
+﻿@model RezzQueue.Models.Animal
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Animal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Agency.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Agency.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Breed.BreedName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Breed.BreedName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Species.SpeciesName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Species.SpeciesName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IconId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IconId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalAge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalPreview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalPreview)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalPhoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalPhoto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimalLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimalLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgencyContact)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AnimalId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

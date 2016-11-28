@@ -1,0 +1,125 @@
+﻿@model RezzQueue.Models.Animal
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Animal</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.SpeciesId, "SpeciesId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("SpeciesId", null, htmlAttributes: new { @class = "form-control", placeholder = "Pet Type"  })
+                @Html.ValidationMessageFor(model => model.SpeciesId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BreedId, "BreedId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("BreedId", null, htmlAttributes: new { @class = "form-control", placeholder = "Pet Breed"  })
+                @Html.ValidationMessageFor(model => model.BreedId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IconId, new { htmlAttributes = new { @class = "form-control", placeholder = "Icon" } })
+                @Html.ValidationMessageFor(model => model.IconId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalName, new { htmlAttributes = new { @class = "form-control", placeholder = "Pet Name" } })
+                @Html.ValidationMessageFor(model => model.AnimalName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalAge, new { htmlAttributes = new { @class = "form-control", placeholder = "Pet Age" } })
+                @Html.ValidationMessageFor(model => model.AnimalAge, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalSize, new { htmlAttributes = new { @class = "form-control", placeholder = "Pet Size" } })
+                @Html.ValidationMessageFor(model => model.AnimalSize, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalPrice, new { htmlAttributes = new { @class = "form-control", placeholder = "Pet Price" } })
+                @Html.ValidationMessageFor(model => model.AnimalPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalPreview, new { htmlAttributes = new { @class = "form-control", placeholder = "Pet Photo" } })
+                @Html.ValidationMessageFor(model => model.AnimalPreview, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalPhoto, new { htmlAttributes = new { @class = "form-control", placeholder = "More Photos" } })
+                @Html.ValidationMessageFor(model => model.AnimalPhoto, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalDesc, new { htmlAttributes = new { @class = "form-control", placeholder = "Pet Description" } })
+                @Html.ValidationMessageFor(model => model.AnimalDesc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnimalLocation, new { htmlAttributes = new { @class = "form-control", placeholder = "Animal Location" } })
+                @Html.ValidationMessageFor(model => model.AnimalLocation, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownList("AgencyId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.AgencyId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AgencyContact, new { htmlAttributes = new { @class = "form-control", placeholder = "Agency Contact" } })
+                @Html.ValidationMessageFor(model => model.AgencyContact, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

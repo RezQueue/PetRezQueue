@@ -1,0 +1,132 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@*@model IEnumerable<RezzQueue.Models.Animal>*@
+@model PagedList.IPagedList<RezzQueue.Models.Animal>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@*<table class="table">*@
+@*<tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Agency.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Breed.BreedName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Species.SpeciesName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IconId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalAge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalPreview)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnimalLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgencyContact)
+        </th>
+        <th></th>
+    </tr>*@
+
+@foreach (var item in Model)
+{
+    @*<tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agency.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Breed.BreedName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Species.SpeciesName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IconId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalAge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalPreview)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AnimalLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgencyContact)
+        </td>*@
+
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div id="AvailablePet" class="thumbnail">
+                @if (ViewBag.Page > 1)
+                {
+
+                <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })" rel="prev" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-left"></span></a>
+                }
+                <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-remove"></span></button>
+                <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-heart"></span></button>
+                <a href="@Url.Action("Index", new { page = ViewBag.Page +1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                <img src="@Url.Content(item.AnimalPreview)" />
+                <div class="caption">
+                    @Html.DisplayFor(modelItem => item.AnimalName)
+                    <br />
+                    @Html.ActionLink("Pet Bio", "Details", "Animals", new { id = item.AnimalId }, new { @class = "btn btn-primary btn-lg" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AnimalId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AnimalId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AnimalId })
+            </td>
+            @*</tr>*@
+}
+
+@*</table>*@
