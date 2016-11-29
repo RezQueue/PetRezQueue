@@ -305,3 +305,6 @@ body {
 .dropdown:hover .dropbtn {
     background-color: #FF9D14;
 }
+.active{
+    background-color: none
+}
