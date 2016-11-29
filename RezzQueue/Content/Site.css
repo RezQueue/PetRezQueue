@@ -1,9 +1,21 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color:lightblue;
+    background: #00c6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }
 
+#jumboMain {
+    background-image: url('Images/old-man-dog.jpeg');
+    height: 400px;
+}
+
+h2{
+    text-transform: uppercase;
+    color: white;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -250,3 +262,15 @@ body {
 {
     text-align: center;
 }
+#buttButton{
+    background-color: #f3a857;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
