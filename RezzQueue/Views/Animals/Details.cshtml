@@ -104,36 +104,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.AnimalLocation)
-
-            <head>
-                <style>
-                    #map {
-                        height: 300px;
-                        width: 25%;
-                    }
-                </style>
-            </head>
-            <body>
-                <h3>My Google Maps Demo</h3>
-                <div id="map"></div>
-                <script>
-      function initMap() {
-          var uluru = { lat: 41.383804, lng: -81.866941 };
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-                </script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONfPgeL43_tki5tbAt6Cms6VBMUmW5bM&callback=initMap">
-                </script>
-            </body>
         </dd>
 
         <dt>
