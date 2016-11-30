@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using RezzQueue.Models;
+using PagedList;
+using PagedList.Mvc;
 
 namespace RezzQueue.Controllers
 {
@@ -15,9 +17,13 @@ namespace RezzQueue.Controllers
         private RezzQueueContext db = new RezzQueueContext();
 
         // GET: Customers
-        public ActionResult Index()
+        public ActionResult Index(int? page, int? id)
         {
-            return View(db.Customers.ToList());
+            this.ViewBag.Page = page + 1;
+
+            this.ViewBag.Id = id;
+
+            return View(db.Animals.ToList().ToPagedList(page ?? 1, 1));
         }
 
         // GET: Customers/Details/5
@@ -44,8 +50,8 @@ namespace RezzQueue.Controllers
             CustomerViewModel customerViewModel = new CustomerViewModel
             {
                 Customer = customer,
-                AllAnimals = animals,
-                AllPetstatus = petstats
+                //AllAnimals = animals,
+                //AllPetstatus = petstats
             };
 
 
