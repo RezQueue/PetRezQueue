@@ -2,9 +2,13 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="buttButton">
-    @*Sign up button*@
-    @Html.ActionLink("Customer Sign Up Here!", "Create", "Customers")
+<div class="dropdown">
+    <button class="dropbtn">My <br /><i class="fa fa-paw"></i> RezzQue <i class="fa fa-paw"></i></button>
+    <div class="dropdown-content">
+        <a href="~/Customers/Create">Sign Up</a>
+        <a href="#">Login</a>
+        <a href="#">Link 3</a>
+    </div>
 </div>
 <div class="jumbotron" id="jumboMain">
 </div>
