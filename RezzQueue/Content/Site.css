@@ -226,7 +226,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: solid;
-    border-color: white;
+    border-width: 10px;
+    border-color: rgb(255, 127, 7);
 }
 
 #NavLandButton {
@@ -261,12 +262,20 @@ body {
     border: none;
     max-width: none;
     width: 350px;
-    background-color:lightblue;
+    background-color: rgba(0,0,0,0)
 }
 
 #PetBioButton
 {
     text-align: center;
+}
+#PetBiographyButton
+{
+    background-color: rgb(255, 127, 7);
+}
+
+#PetBiographyButton:hover button:hover{
+    background-color: #FF9D14;
 }
 
 #AvailablePet:hover button:hover{
