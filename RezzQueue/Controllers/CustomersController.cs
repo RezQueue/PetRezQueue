@@ -71,6 +71,31 @@ namespace RezzQueue.Controllers
             if (ModelState.IsValid)
             {
                 db.Customers.Add(customer);
+                
+                Animal AnimalHolder = db.Animals.ToList().Last();
+                int animalLength = AnimalHolder.AnimalId;
+                for (int i = 0; i <= animalLength; i++)
+                {
+                    
+                    Animal AnimalList = db.Animals.Find(i);
+
+                    if (AnimalList == null)
+                    {
+
+                    }
+                    else
+                    {
+                        PetStatus CustomerList = new PetStatus();
+                        CustomerList.CustomerId = customer.CustomerId;
+                        CustomerList.AnimalId = AnimalList.AnimalId;
+                        CustomerList.Favorite = false;
+                        CustomerList.HasSeen = false;
+                        CustomerList.ThumbsDown = false;
+                        db.PetStatus.Add(CustomerList);
+                        db.SaveChanges();
+                    }
+                }
+                
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
