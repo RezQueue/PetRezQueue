@@ -21,37 +21,36 @@ namespace RezzQueue.Controllers
         }
 
         // GET: Customers/Details/5
-        public ActionResult Details(int? id)
+       public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Customer customer = db.Customers.Find(1);
-            IEnumerable<Animal> animals = (from a in db.Animals
-                                                   select new Animal
-                                                   {
-                                                       AnimalId = a.AnimalId,
-                                                       AnimalName = a.AnimalName
-                                                   });
-            IEnumerable<PetStatus> petstats = (from a in db.PetStatus
-                                               select new PetStatus
-                                               {
-                                                   PetStatusId = a.PetStatusId,
-                                                   Favorite = a.Favorite
-                                               });
+            Customer customer = db.Customers.Find(id);
+            List<Animal> FavAnimal = new List<Animal>();
+            for (int i = 1; i <= db.PetStatus.Count(); i++)
+            {
+                PetStatus tempPet = db.PetStatus.Find(i);
+                if (tempPet.Favorite == true && tempPet.CustomerId == id)
+                {
+                    FavAnimal.Add(db.Animals.Find(tempPet.AnimalId));
+                }
+            }
+
+
+
             CustomerViewModel customerViewModel = new CustomerViewModel
             {
                 Customer = customer,
-                AllAnimals = animals,
-                AllPetstatus = petstats
+                AllAnimals = FavAnimal
             };
 
 
             
             
-            return View(customer);
+            return View(customerViewModel);
 
         }
 
