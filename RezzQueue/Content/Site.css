@@ -268,10 +268,12 @@ body {
 #PetBioButton
 {
     text-align: center;
+    background-color: rgb(255, 127, 7);
 }
-#PetBiographyButton
+.petbiographybutton
 {
     background-color: rgb(255, 127, 7);
+    text-align: center;
 }
 
 #PetBiographyButton:hover button:hover{

@@ -99,43 +99,43 @@
             @Html.DisplayFor(modelItem => item.AgencyContact)
         </td>*@
 
-
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div id="AvailablePet" class="thumbnail">
-                @if (ViewBag.Page > 1)
+    <div id="LandContent" class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div id="AvailablePet" class="thumbnail">
+                    @if (ViewBag.Page > 1)
                 {
 
-                <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })" rel="prev" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-left"></span></a>
-                }
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })" rel="prev" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-left"></span></a>
+                    }
 
-                <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-remove"></span></button>
-                <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-heart"></span></button>
-@if (ViewBag.Count != ViewBag.Page)
-{
-    <a href="@Url.Action("Index", new { page = ViewBag.Page +1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
-}
-else
-{
-    <a href="@Url.Action("Index", new { page = 1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
-}
+                    <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-remove"></span></button>
+                    <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-heart"></span></button>
+                    @if (ViewBag.Count != ViewBag.Page)
+                    {
+                        <a href="@Url.Action("Index", new { page = ViewBag.Page +1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Index", new { page = 1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                    }
 
-                <img src="@Url.Content(item.AnimalPreview)" />
-                <div class="caption">
-                    @Html.DisplayFor(modelItem => item.AnimalName)
-                    <br />
-                    @Html.ActionLink("Pet Bio", "Details", "Animals", new { id = item.AnimalId }, new { @class = "btn btn-primary btn-lg" })
+                    <img Id="PetPic" src="@Url.Content(item.AnimalPreview)" />
+                    <div class="caption">
+                        <h3 id="LandPetName">@Html.DisplayFor(modelItem => item.AnimalName)</h3>
+                        <br />
+                        <p>    @Html.ActionLink("Pet Bio", "Details", "Animals", new { id = item.AnimalId }, new { @class = "btn btn-primary btn-lg  " })</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.AnimalId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.AnimalId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.AnimalId })
-            </td>
-            @*</tr>*@
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.AnimalId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.AnimalId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.AnimalId })
+        </td>
+        @*</tr>*@
 }
 
 @*</table>*@
