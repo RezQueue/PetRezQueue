@@ -14,7 +14,7 @@
 
 h2{
     text-transform: uppercase;
-    color: white;
+    color: orange;
 }
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -297,7 +297,7 @@ body {
     font-weight: bold;
     border: solid;
     /*border-color: white;*/
-    border-radius: 25%;
+    border-radius: 0;
     /*position: absolute;
     top: 0px;
     left: 0px;*/
@@ -353,3 +353,10 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     }
+
+#mainTable{
+    background-color: white;
+}
+.navbar-default{
+    background-color:rgb(255, 127, 7);
+}

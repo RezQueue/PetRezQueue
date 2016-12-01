@@ -10,16 +10,36 @@
     <h4>Animal</h4>
     <hr />
     <dl class="dl-horizontal">
+
+        <div class="row" id="row1Detail">
+            <dt>
+                <img src="@Url.Content(Model.AnimalPreview)" />
+            </dt>
+
+        </div>
+
+
+
         <dt>
-            @Html.DisplayNameFor(model => model.Agency.Username)
+            Name:
+            @*@Html.DisplayNameFor(model => model.AnimalName)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Agency.Username)
+            @Html.DisplayFor(model => model.AnimalName)
         </dd>
 
+        @*<dt>
+                @Html.DisplayNameFor(model => model.Agency.Username)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Agency.Username)
+            </dd>*@
+
         <dt>
-            @Html.DisplayNameFor(model => model.Breed.BreedName)
+            Breed:
+            @*@Html.DisplayNameFor(model => model.Breed.BreedName)*@
         </dt>
 
         <dd>
@@ -27,7 +47,8 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Species.SpeciesName)
+            Animal Type:
+            @*@Html.DisplayNameFor(model => model.Species.SpeciesName)*@
         </dt>
 
         <dd>
@@ -35,31 +56,26 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.IconId)
+
+            @*@Html.DisplayNameFor(model => model.IconId)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.IconId)
+            @*@Html.DisplayFor(model => model.IconId)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AnimalName)
+            Age:
+            @*@Html.DisplayNameFor(model => model.AnimalAge)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AnimalName)
+            @Html.DisplayFor(model => model.AnimalAge) years
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AnimalAge)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AnimalAge)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AnimalSize)
+            Size:
+            @*@Html.DisplayNameFor(model => model.AnimalSize)*@
         </dt>
 
         <dd>
@@ -67,7 +83,8 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.AnimalPrice)
+            Price:
+            @*@Html.DisplayNameFor(model => model.AnimalPrice)*@
         </dt>
 
         <dd>
@@ -77,6 +94,8 @@
         <dt>
             @Html.DisplayNameFor(model => model.AnimalPreview)
         </dt>
+
+
 
         <dd>
             @Html.DisplayFor(model => model.AnimalPreview)
@@ -114,7 +133,7 @@
                 </style>
             </head>
             <body>
-                <h3>My Google Maps Demo</h3>
+                <h3>Pet Location</h3>
                 <div id="map"></div>
                 <script>
       function initMap() {

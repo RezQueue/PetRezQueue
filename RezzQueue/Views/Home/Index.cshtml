@@ -1,24 +1,21 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="dropdown">
-                    <button class="dropbtn">My <br /><i class="fa fa-paw"></i> RezzQue <i class="fa fa-paw"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">Member Login</a>
-                        <a href="~/Customers/Create">Sign Up</a>
-                        <a href="~/Animals/Index">Pet Search <span class="glyphicon glyphicon-search"></span></a>
-                        <a href="~/Customers/Details">Favorites <span class="glyphicon glyphicon-heart-empty"></span></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+<div class="dropdown">
+    <button class="dropbtn">My <br /><i class="fa fa-paw"></i> RezzQue <i class="fa fa-paw"></i></button>
+    <div class="dropdown-content">
+        <a href="#">Member Login</a>
+        <a href="~/Customers/Create">Sign Up</a>
+        <a href="~/Animals/Index">Pet Search <span class="glyphicon glyphicon-search"></span></a>
+        <a href="~/Customers/Details">Favorites <span class="glyphicon glyphicon-heart-empty"></span></a>
     </div>
-</nav>
+</div>
+
+
+
+
+
+
 @*<div class="dropdown">
         <button class="dropbtn">My <br /><i class="fa fa-paw"></i> RezzQue <i class="fa fa-paw"></i></button>
         <div class="dropdown-content">
@@ -33,25 +30,30 @@
     <div class="jumbotron" id="jumboMain">
     </div>
 
-    <div class="row">
+
+
+    <div id="mainTable">
+        <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
+            <h2> 1. Create Profile</h2>
             <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
+                Sign into the pet profile in order. 
+                
             </p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+            
         </div>
         <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            <h2>2. Find Pet </h2>
+            <p>Locate Pets in your area</p>
+           
         </div>
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+            <h2> 3. Contact Agency</h2>
+            <p>Reach out to an agency in order to buy your pet. </p>
+            
         </div>
+    </div>
+
+
     </div>
 </div>
