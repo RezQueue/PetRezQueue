@@ -239,6 +239,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Cat7.jpeg" />
     <Content Include="Content\Images\HeadShot.jpg" />
     <Content Include="Content\Images\Moofasa.jpg" />
     <Content Include="Content\PagedList.css" />

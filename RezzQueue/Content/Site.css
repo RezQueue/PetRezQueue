@@ -294,7 +294,11 @@ body {
     cursor: pointer;
     font-weight: bold;
     border: solid;
-    border-color: white;
+    /*border-color: white;*/
+    border-radius: 25%;
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
 }
 
 .dropdown {
@@ -328,6 +332,11 @@ body {
 }
 
 
+
+#HomeBodyContent
+{
+    padding-top: 50px;
+}
 
 
 #buttButton{
