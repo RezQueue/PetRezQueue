@@ -28,7 +28,7 @@ namespace RezzQueue.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Customer customer = db.Customers.Find(id);
+            Customer customer = db.Customers.Find(1);
             IEnumerable<Animal> animals = (from a in db.Animals
                                                    select new Animal
                                                    {
@@ -51,7 +51,7 @@ namespace RezzQueue.Controllers
 
             
             
-            return View(customerViewModel);
+            return View(customer);
 
         }
 
@@ -97,7 +97,7 @@ namespace RezzQueue.Controllers
                 }
                 
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Animals", new { page = 1 });
             }
 
             return View(customer);

@@ -110,7 +110,15 @@
                 }
                 <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-remove"></span></button>
                 <button id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-heart"></span></button>
-                <a href="@Url.Action("Index", new { page = ViewBag.Page +1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                @if (ViewBag.Count != ViewBag.Page)
+                {
+                    <a href="@Url.Action("Index", new { page = ViewBag.Page +1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Index", new { page = 1 })" rel="next" id="NavLandButton" type="button" class="btn btn-default"><span id="LandButtonGlyph" class="glyphicon glyphicon-chevron-right"></span></a>
+                }
+
                 <img src="@Url.Content(item.AnimalPreview)" />
                 <div class="caption">
                     @Html.DisplayFor(modelItem => item.AnimalName)

@@ -19,9 +19,9 @@ namespace RezzQueue.Controllers
         // GET: Animals
         public ActionResult Index(int? page, int? id)
         {
-            this.ViewBag.Page = page + 1;
-            
+            this.ViewBag.Page = page;
 
+            this.ViewBag.Count = db.Animals.Count();
             return View(db.Animals.ToList().ToPagedList(page ?? 1, 1));
 
 
